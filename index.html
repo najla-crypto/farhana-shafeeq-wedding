@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#082d25">
-  <meta name="description" content="Join us to celebrate the wedding of Farhana & Shafeeq.">
+  <meta name="description" content="A wedding invitation for Farhana & Shafeeq.">
   <title>Farhana & Shafeeq | Wedding Invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,29 +12,109 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="grain"></div>
-  <div class="intro" id="intro">
-    <div class="intro-ornament">✦</div>
-    <p class="eyebrow">A WEDDING INVITATION</p>
-    <h1>Farhana <span>&</span> Shafeeq</h1>
-    <p class="intro-note">A beautiful beginning, by the grace of Allah</p>
-    <button class="gold-button" id="openInvite">Open Invitation <span>↗</span></button>
-    <p class="tiny-note">Tap to begin</p>
-  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Automatically-playing animated invitation. Browser audio autoplay may require one tap. -->
+  <section class="film-intro" id="filmIntro" aria-label="Animated wedding invitation">
+    <div class="film-frame">
+      <div class="film-corner top-left">✧</div><div class="film-corner top-right">✧</div>
+      <div class="film-corner bottom-left">✧</div><div class="film-corner bottom-right">✧</div>
+
+      <div class="film-slide active" data-slide="0">
+        <div class="crest" aria-label="Ornamental F and S crest">
+          <svg viewBox="0 0 220 220" role="img" aria-hidden="true">
+            <path d="M110 12 C135 35 172 28 192 55 C169 78 181 112 208 132 C178 151 175 181 150 205 C128 183 92 183 70 205 C45 181 42 151 12 132 C39 112 51 78 28 55 C48 28 85 35 110 12Z" fill="none" stroke="#d8b66e" stroke-width="1.5"/>
+            <path d="M110 25 C132 48 160 42 178 59 C158 82 168 109 191 130 C164 148 161 172 147 190 C126 173 94 173 73 190 C59 172 56 148 29 130 C52 109 62 82 42 59 C60 42 88 48 110 25Z" fill="none" stroke="#b78d4c" stroke-width="1"/>
+            <path d="M54 110 Q110 42 166 110 Q110 178 54 110Z" fill="none" stroke="#d8b66e" stroke-width="1"/>
+            <text x="110" y="119" text-anchor="middle" fill="#f4e8ca" font-family="Georgia,serif" font-size="57">F<tspan fill="#d8b66e" font-style="italic" font-size="35">&amp;</tspan>S</text>
+            <circle cx="110" cy="20" r="3" fill="#e8ce91"/><circle cx="110" cy="200" r="3" fill="#e8ce91"/>
+          </svg>
+        </div>
+        <p class="film-kicker">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+        <p class="film-label">A WEDDING INVITATION</p>
+        <h1>With the blessings<br>of Allah</h1>
+        <p class="film-sub">A beautiful beginning, by the grace of Allah</p>
+      </div>
+
+      <div class="film-slide" data-slide="1">
+        <p class="film-label">TOGETHER WITH THEIR FAMILIES</p>
+        <h2>Request the honour<br>of your presence</h2>
+        <div class="film-divider"></div>
+        <p class="film-sub">As they begin a new chapter<br>with love, faith and duas</p>
+      </div>
+
+      <div class="film-slide" data-slide="2">
+        <p class="film-label">THE BRIDE'S FAMILY</p>
+        <h2 class="family-name">AYOOB P. M<br>&amp; FASEEHATH BEEVI</h2>
+        <p class="film-sub">request your blessings for</p>
+        <h3>Farhana Ayoob</h3>
+      </div>
+
+      <div class="film-slide" data-slide="3">
+        <p class="film-label">THE GROOM'S FAMILY</p>
+        <h2 class="family-name">MR K. K NAVAS<br>&amp; MRS FOUSIYA NAVAS</h2>
+        <p class="film-sub">request your blessings for</p>
+        <h3>Shafeeq K. N</h3>
+      </div>
+
+      <div class="film-slide couple-slide" data-slide="4">
+        <p class="film-label">CELEBRATING THEIR UNION</p>
+        <img class="film-couple" src="assets/images/couple-illustration.png" alt="Decorative illustration of a bride and groom beneath an ornate arch">
+        <h2>Farhana <em>&amp;</em> Shafeeq</h2>
+        <p class="film-sub">Two hearts. One beautiful journey.</p>
+      </div>
+
+      <div class="film-slide" data-slide="5">
+        <p class="film-label">SAVE THE DATE</p>
+        <div class="date-ornament">✧</div>
+        <h2 class="film-date">SUNDAY<br><strong>27</strong><br>DECEMBER 2026</h2>
+        <div class="film-divider"></div>
+        <p class="film-sub">Nikkah at <strong>12:00 PM</strong></p>
+      </div>
+
+      <div class="film-slide" data-slide="6">
+        <p class="film-label">THE NIKKAH CEREMONY</p>
+        <h2>MCMJ Auditorium</h2>
+        <p class="film-sub">SPW Rd, Choornikkara,<br>Kochi</p>
+        <div class="film-divider"></div>
+        <p class="film-sub">Your presence and duas<br>will make our day special.</p>
+      </div>
+
+      <div class="film-slide" data-slide="7">
+        <div class="crest small-crest">
+          <svg viewBox="0 0 220 220" aria-hidden="true">
+            <path d="M110 12 C135 35 172 28 192 55 C169 78 181 112 208 132 C178 151 175 181 150 205 C128 183 92 183 70 205 C45 181 42 151 12 132 C39 112 51 78 28 55 C48 28 85 35 110 12Z" fill="none" stroke="#d8b66e" stroke-width="1.5"/>
+            <text x="110" y="120" text-anchor="middle" fill="#f4e8ca" font-family="Georgia,serif" font-size="55">F<tspan fill="#d8b66e" font-style="italic" font-size="34">&amp;</tspan>S</text>
+          </svg>
+        </div>
+        <p class="film-label">WITH LOVE &amp; PRAYERS</p>
+        <h2>We look forward<br>to celebrating with you</h2>
+        <p class="film-sub">Please join us for this blessed occasion.</p>
+        <button class="gold-button enter-site" id="enterSite">Enter the wedding website <span>↗</span></button>
+      </div>
+
+      <div class="film-progress" id="filmProgress"><span></span></div>
+      <button class="skip-film" id="skipFilm" type="button">Skip animation ↗</button>
+      <div class="audio-hint" id="audioHint" hidden>
+        <span>♫</span> Tap to play the nasheed
+        <button id="enableAudio" type="button">Play</button>
+      </div>
+    </div>
+  </section>
 
   <header class="topbar">
-    <a class="brand" href="#home">F <span>&</span> S</a>
+    <a class="brand" href="#home">F <span>&amp;</span> S</a>
     <a class="top-link" href="#details">THE CELEBRATION <span>↗</span></a>
   </header>
 
-  <main>
+  <main id="mainSite">
     <section class="hero section" id="home">
       <div class="arch arch-one"></div><div class="arch arch-two"></div>
       <div class="hero-content">
         <p class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
         <p class="eyebrow">WITH THE BLESSINGS OF ALLAH</p>
         <p class="hero-small">Together with our families</p>
-        <h2>Farhana <span class="amp">&</span><br>Shafeeq</h2>
+        <h2>Farhana <span class="amp">&amp;</span><br>Shafeeq</h2>
         <div class="gold-line"></div>
         <p class="hero-tagline">Two hearts. One beautiful journey.</p>
         <a class="text-link" href="#details">JOIN OUR CELEBRATION <span>↓</span></a>
@@ -57,13 +137,13 @@
           <p class="eyebrow">THE BRIDE</p>
           <h3>Farhana Ayoob</h3>
           <p>Daughter of</p>
-          <p class="family-parents">Ayoob P. M<br>&amp; Faseehath Beevi</p>
+          <p class="family-parents">AYOOB P. M<br>&amp; FASEEHATH BEEVI</p>
         </div>
         <div class="family-card">
           <p class="eyebrow">THE GROOM</p>
           <h3>Shafeeq K. N</h3>
           <p>Son of</p>
-          <p class="family-parents">Mr K. K Navas<br>&amp; Mrs Fousiya Navas</p>
+          <p class="family-parents">MR K. K NAVAS<br>&amp; MRS FOUSIYA NAVAS</p>
         </div>
       </div>
       <div class="small-star">✦</div>
@@ -78,7 +158,7 @@
         <i>:</i><div><strong id="minutes">—</strong><span>MINUTES</span></div>
         <i>:</i><div><strong id="seconds">—</strong><span>SECONDS</span></div>
       </div>
-      <p class="date-line" id="dateLabel">Wedding date to be announced</p>
+      <p class="date-line" id="dateLabel">Sunday, 27 December 2026</p>
     </section>
 
     <section class="details section" id="details">
@@ -98,7 +178,7 @@
         <p class="eyebrow">VENUE</p>
         <h3 id="venueName">MCMJ Auditorium</h3>
         <p id="venueAddress">SPW Rd, Choornikkara, Kochi</p>
-        <a class="gold-button button-small" id="mapLink" href="#" target="_blank" rel="noopener">View on Google Maps <span>↗</span></a>
+        <a class="gold-button button-small" id="mapLink" href="https://www.google.com/maps/search/?api=1&amp;query=MCMJ+Auditorium%2C+SPW+Rd%2C+Choornikkara%2C+Kochi" target="_blank" rel="noopener">View on Google Maps <span>↗</span></a>
       </div>
     </section>
 
@@ -107,43 +187,22 @@
       <h2>Our Gallery</h2>
       <p class="gallery-hint">A collection of moments to celebrate our beginning.</p>
       <div class="gallery">
-        <div class="photo photo-tall"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Wedding celebration"></div>
-        <div class="photo"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85" alt="Wedding details"></div>
-        <div class="photo"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=85" alt="Wedding couple"></div>
+        <div class="photo photo-tall"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Wedding celebration"></div>
+        <div class="photo"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Wedding details"></div>
+        <div class="photo"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Wedding couple"></div>
       </div>
     </section>
 
-    <section class="rsvp-section section" id="rsvp">
-      <div class="rsvp-card">
-        <p class="eyebrow">KINDLY REPLY</p>
-        <h2>Will you join us?</h2>
-        <p class="body-copy">We would be honoured to celebrate our Nikkah with you. Please let us know if you can attend.</p>
-        <form id="rsvpForm">
-          <label for="guestName">Your name</label>
-          <input id="guestName" name="guestName" placeholder="Enter your name" required>
-          <label for="attendance">Your response</label>
-          <select id="attendance" name="attendance">
-            <option value="Joyfully accepts">Joyfully accepts</option>
-            <option value="Regretfully declines">Regretfully declines</option>
-          </select>
-          <label for="guestCount">Number of guests</label>
-          <select id="guestCount" name="guestCount">
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-          <button class="gold-button submit-button" type="submit">Send RSVP on WhatsApp <span>↗</span></button>
-        </form>
-        <p class="tiny-note">Your response will open WhatsApp with a pre-filled message.</p>
-      </div>
-    </section>
   </main>
 
   <footer>
-    <button class="music-button" id="musicButton" aria-label="Play or pause music">♫ <span id="musicText">Play music</span></button>
-    <p class="footer-names">Farhana <span>&</span> Shafeeq</p>
+    <button class="music-button" id="musicButton" aria-label="Play or pause nasheed">♫ <span id="musicText">Pause nasheed</span></button>
+    <p class="footer-names">Farhana <span>&amp;</span> Shafeeq</p>
     <p class="footer-note">MADE WITH LOVE · PLEASE KEEP US IN YOUR DUAS</p>
   </footer>
-  <audio id="backgroundMusic" loop>
-    <source src="assets/music/wedding-music.mp3" type="audio/mpeg">
+
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="assets/music/wedding-nasheed.mp3" type="audio/mpeg">
   </audio>
   <script src="script.js"></script>
 </body>

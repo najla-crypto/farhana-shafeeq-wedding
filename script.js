@@ -1,15 +1,14 @@
 // EDIT YOUR WEDDING DETAILS IN THIS SECTION
 const wedding = {
-  // Use format: "2027-02-14T18:00:00" (24-hour time). Replace with your local wedding date/time.
-  date: null,
-  dateText: "Date to be announced",
-  timeText: "Time to be announced",
-  venueName: "Venue name",
-  venueAddress: "Venue address will be added here",
-  // Paste a Google Maps link between the quotes.
-  mapUrl: "",
-  // Add your WhatsApp number with country code, digits only. Example India: 919876543210
-  whatsappNumber: ""
+  // Nikkah date and time in India Standard Time (device-local time is used).
+  date: "2026-12-27T12:00:00",
+  dateText: "Sunday, 27 December 2026",
+  timeText: "12:00 PM",
+  venueName: "MCMJ Auditorium",
+  venueAddress: "SPW Rd, Choornikkara, Kochi",
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=MCMJ+Auditorium%2C+SPW+Rd%2C+Choornikkara%2C+Kochi",
+  // RSVP WhatsApp number with India country code, digits only.
+  whatsappNumber: "918590568975"
 };
 
 document.getElementById("openInvite").addEventListener("click", () => {
@@ -53,7 +52,7 @@ document.getElementById("rsvpForm").addEventListener("submit", event => {
   const attendance = document.getElementById("attendance").value;
   const guests = document.getElementById("guestCount").value;
   if (!wedding.whatsappNumber) {
-    alert("Please add the couple's WhatsApp number in script.js before using RSVP.");
+    alert("RSVP contact details will be available soon. Please contact the families directly for now.");
     return;
   }
   const message = `Wedding RSVP - Farhana & Shafeeq%0AName: ${encodeURIComponent(name)}%0AResponse: ${encodeURIComponent(attendance)}%0ANumber of guests: ${guests}`;
